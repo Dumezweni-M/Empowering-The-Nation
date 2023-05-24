@@ -1,2 +1,2 @@
-# Empowering-The-Nation (Mobile)
+# Empowering-The-Nation
 ETN TYDUK GROUP
