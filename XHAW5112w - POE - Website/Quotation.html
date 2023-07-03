@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering the Nation - Quotation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+  <body>
+    <header>
+    
+      <div class="logo">
+        <img src="C:\Users\tyron\Desktop\XHAW5112w - POE - Website\Images\EMPOWERING-01.png" alt="Empowering the Nation logo" width="200" height="200">
+      </div>
+        <nav class="nav">      
+          <a href="homePage.html">Home</a>
+          <a href="aboutUs.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">Six-month Courses</button>
+            <div class="dropdown-content">
+              <a href="firstAid.html">First Aid</a>
+              <a href="sewing.html">Sewing</a>
+              <a href="landScaping.html">Landscaping</a>
+              <a href="lifeSkills.html">Life Skills</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Six-week Courses</button>
+            <div class="dropdown-content">
+              <a href="childMinding.html">Child Minding</a>
+              <a href="cooking.html">Cooking</a>
+              <a href="gardenMaintenance.html">Garden Maintenance</a>
+              
+            </div>
+          </div>
+          <a href="Quotation.html">Quotation</a>
+          <a href="contactPage.html">Contact Details</a>       
+        </nav>
+      
+    </header>
+
+      <br>
+      <br>
+      <section>
+        <h2>Calculate Courses Fees</h2>
+        
+        <table width="1500" height = "400" table-layout = "auto">
+        
+          <tr>
+            <td colspan="2" style="width: 50%; background-color: rgb(211, 211, 211);"> <form id="feeForm">
+              <div id="inputs">
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <input type="text" id="phone_number" name="phone_number" placeholder="Your Phone Number">
+              <input type="text" id="email_address" name="email_address" placeholder="Your Email Address">
+              </div>
+              <label><input type="checkbox" id="first_aid" name="course" value="First Aid" data-fee="1500"> First Aid (R1500)</label>
+              <label><input type="checkbox" id="sewing" name="course" value="Sewing" data-fee="1500"> Sewing (R1500)</label>
+              <label><input type="checkbox" id="landscaping" name="course" value="Landscaping" data-fee="1500"> Landscaping (R1500)</label>
+              <label><input type="checkbox" id="life_skills" name="course" value="Life Skills" data-fee="1500"> Life Skills (R1500)</label>
+              <label><input type="checkbox" id="child_minding" name="course" value="Child Minding" data-fee="750"> Child Minding (R750)</label>
+              <label><input type="checkbox" id="cooking" name="course" value="Cooking" data-fee="750"> Cooking (R750)</label>
+              <label><input type="checkbox" id="garden_maintenance" name="course" value="Garden Maintenance" data-fee="750"> Garden Maintenance (R750)</label>
+              <br>
+              <br>
+              <button type="button" onclick="calculateTotalFees()">Calculate Total Fees</button>
+            </form> </td>
+            <td colspan="2" style="width: 50%; background-color: rgb(230, 221, 221);">
+              <div id="totalFeesContainer">
+              <div id="pay">
+                <h2>Payment Confirmation</h2>
+                <br>
+                <h3>Name: <span id="fullName"></span></h3>
+                <h3>Phone Number: <span id="phoneNumber"></span></h3>
+                <h3>Email: <span id="yourEmail"></span></h3>
+                
+                <h3>Course Fees: <span id="course_selected">0</span></h3>
+                <h3>Discount on Courses: <span id="discount_amount">0</span></h3>
+                <h3>Sub Total: <span id="sub_total">15%</span></h3>
+                <h3>VAT: <span id="vatAmount">15%</span></h3>
+                <h3>Total Fees: <span id="total_fee">0</span></h3>
+               
+                <a href="validate.html"><button type="submit" onclick="href='validate.html';">Submit</button></a>
+                
+              </div></td>
+          </tr>
+          
+        </table>
+        
+        
+      </section>
+    
+      
+
+  </body>
+</html>
